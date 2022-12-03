@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        .red{
+    background-color: red;
+    color: white;
+}
+/* id section */
+#head{
+    background-color: green;
+}
+/* indicates whole page */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.one{
+    background-color: grey;
+    color: rgb(255, 255, 255);
+    height: 345px;
+}
+.two{
+    color: rgb(14, 15, 14);
+}
+
+.container{
+    border: 2px solid black;
+    width: 70vh;
+    height: 60vh;
+    color: rgb(7, 255, 81);
+    /* background-color: aqua; */
+     
+    /* shorthand background- */
+    /* background:red url(waterfall.jpg) no-repeat top center ; */
+    
+    background-image: url(waterfall.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+
+}
+    </style>
+    
+</head>
+<body>
+    <div class="red">
+        This is class red.
+    </div>
+    <div id="head">
+        hello id Head
+    </div>  
+    <div class="one two">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel explicabo minus distinctio inventore odio neque qui nam temporibus corporis libero autem sint quaerat nesciunt enim eaque quae dolore id soluta, eveniet nisi consequuntur possimus!</p>
+    </div>
+    <span class="one">lorem ipsim dolore</span>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facere magnam odit. Ab dolore numquam veritatis culpa autem facilis eveniet, dolor at incidunt molestias! Corrupti, tempore repudiandae error velit placeat animi ea eius laudantium?
+    </div>
+</body>
+</html>
