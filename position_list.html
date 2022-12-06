@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            /* margin: 0;
+            padding: 0; */
+            /* height: 400px; */
+        } 
+        nav li{
+            display: inline;
+        }
+        header{
+            background-color: black;
+            color: white;
+            height: 34px;
+            position: sticky;
+            top: 0;
+        }
+        .container p{
+            text-align: center;
+            border: 2px solid red;
+        }
+        .container{
+            background-color: aqua;
+            height: 50vh;
+            width: 50vw;
+            margin: auto;
+            padding: 3px;
+            position: relative;
+
+            z-index: 1;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: yellowgreen;
+            position: relative;
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(68, 97, 9);
+            position: absolute;
+            top: 20px;
+            
+        }
+        ul{
+            background-color: red;
+
+        }
+        ul li{
+            list-style: square outside;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsum neque deleniti? Debitis, quia alias officiis tempore voluptate totam. Voluptatum possimus modi maxime molestiae?</p>
+        <div class="box">
+            I am a box.
+        </div>
+        <div class="box2">
+            hello i am box 2.
+        </div>
+    </div>
+
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ul>
+</body>
+</html>
