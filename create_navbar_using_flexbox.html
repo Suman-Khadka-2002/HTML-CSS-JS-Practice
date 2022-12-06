@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar using Flexbox</title>
+    <style>
+        ul{
+            padding: 10px;
+        }
+        header nav ul li{
+            display: inline;
+            padding: 1px 14px;
+        }
+        header{
+            background-color: black;
+            color: white;
+        }
+        .div1{
+            height: 30vh;
+            width: 30vw;
+            background-color: blue;
+            color: white;
+        }
+        .div2{
+            height: 30vh;
+            width: 30vw;
+            background-color: yellow;
+            color: black;
+            position: relative;
+            left: 15vw;
+        }
+        .container{
+            display: flex;
+            position: relative;
+            left: 10vw;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="profile.jpg" width="60px" alt="profile"></li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="div1">Div1</div>
+        <div class="div2">Div2</div>
+    </div>
+</body>
+</html>

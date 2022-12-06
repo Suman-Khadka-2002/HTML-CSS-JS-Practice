@@ -4,12 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>using Flexbox</title>
+    <title>Flexbox Practice</title>
     <style>
-        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            padding: 12px;
+        }
+        header nav ul li{
+            list-style: none;
+            display: inline;
+            padding: 0 14px;
+        }
+        header{
+            background-color: black;
+            color: white;
+        }
+        .left{
+            height: 80vh;
+            width: 40vw;
+            background-color: yellow;
+
+        }
+        .right{
+            height: 80vh;
+            width: 40vw;
+            background-color: rgb(200, 22, 51);
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, hic accusamus facere aliquam ut expedita tempora rerum quasi architecto quas quaerat unde at voluptate.
+        </div>
+        <div class="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis similique explicabo accusantium laborum consequatur aut, aspernatur, perspiciatis eius dignissimos esse quia maiores sunt?
+
+        </div>
+    </div>
 </body>
 </html>
