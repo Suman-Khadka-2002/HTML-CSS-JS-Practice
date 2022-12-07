@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thin progress bar using animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .progress{
+            background-color: red;
+            height: 3px;
+            animation: loading .5s ease-in-out 1 ;
+        }
+        header{
+            height: 120px;
+            background-color: black;
+        }
+        main{
+            height: 900px;
+            background-color: blue;
+        }
+        @keyframes loading{
+            0%{
+                width: 0;
+            }
+            90%{
+                width: 40vw;
+            }
+            100%{
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress"></div>
+    <header></header>
+    <main></main>
+</body>
+</html>
