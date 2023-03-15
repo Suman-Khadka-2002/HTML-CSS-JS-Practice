@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Positioning Example</title>
+    <style>
+      /* Relative Positioning */
+      .relative-container {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        background-color: #ccc;
+      }
+
+      .relative-child {
+        position: relative;
+        top: 50px;
+        left: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: #f00;
+      }
+
+      /* Float Positioning */
+      .float-container {
+        width: 400px;
+        height: 100px;
+        background-color: #eee;
+      }
+
+      .float-child {
+        float: right;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background-color: #0f0;
+      }
+
+      /* Absolute Positioning */
+      .absolute-container {
+        position:absolute;
+        width: 300px;
+        height: 200px;
+        background-color: #ddd;
+      }
+
+      .absolute-child {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: #00f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="relative-container">
+      <div class="relative-child"></div>
+    </div>
+
+    <div class="float-container">
+      <div class="float-child"></div>
+      <div class="float-child"></div>
+    </div>
+
+    <div class="absolute-container">
+      <div class="absolute-child"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      /* Default styles */
+      body {
+        background-color: lightblue;
+        color: black;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        text-align: center;
+      }
+      h1 {
+        font-size: 36px;
+        margin-top: 50px;
+      }
+      p {
+        margin-bottom: 30px;
+      }
+
+      /* Media Queries */
+      @media only screen and (min-width: 600px) {
+        body {
+          background-color: lightpink;
+        }
+        h1 {
+          font-size: 48px;
+        }
+      }
+
+      @media print {
+        body {
+          background-color: white;
+          color: black;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        body {
+          font-size: 14px;
+          color: black;
+        }
+        p {
+          margin-bottom: 20px;
+        }
+      }
+
+      @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        body {
+          background-color: pink;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media Queries</h1>
+    <p>
+      This is an example of how media queries can be used to change the
+      appearance of a web page based on the characteristics of the user's
+      device.
+    </p>
+  </body>
+</html>
