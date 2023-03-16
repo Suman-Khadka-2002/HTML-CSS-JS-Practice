@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<student-data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<record>
+		<Name>Suman</Name>
+		<Age>20</Age>
+		<GPA>3.6</GPA>
+	</record>
+	<record>
+		<Name>Tom</Name>
+		<Age>26</Age>
+		<GPA>3.8</GPA>
+	</record>
+	<record>
+		<Name>Tony</Name>
+		<Age>52</Age>
+		<GPA>4</GPA>
+	</record>
+</student-data>

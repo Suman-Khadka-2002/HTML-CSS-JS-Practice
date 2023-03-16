@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="book.xsl"?>
+<bookstore>
+    <book category="IT">
+      <title lang="en">Web Technology</title>
+      <author>Pearson</author>
+      <year>2005</year>
+      <price>300.00</price>
+    </book>
+    <book category="CHILDREN">
+      <title lang="en">Harry Potter</title>
+      <author>J K. Rowling</author>
+      <year>2005</year>
+      <price>29.99</price>
+    </book>
+    <book category="Fictional">
+      <title lang="en">House of Dragons</title>
+      <author>George RR Martin</author>
+      <year>2018</year>
+      <price>99.99</price>
+    </book>
+  </bookstore>

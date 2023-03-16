@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 5px;
+  }
+</style>
+</head>
+<body>
+  <h3>The XMLHttpRequest Object</h3>
+
+  <button type="button" onclick="loadDoc()">View Books</button>
+  <br><br>
+  <table id="id1"></table>
+
+  <script>
+    function loadDoc() {
+      const xhttp = new XMLHttpRequest();
+      xhttp.onload = function () {
+        myFunction(this);
+      }
+      xhttp.open("GET", "book.xml");
+      xhttp.send();
+    }
+    function myFunction(xml) {
+      const xmlDoc = xml.responseXML;
+      const x = xmlDoc.getElementsByTagName("book");
+      let table = "<tr><th>Title</th><th>Author</th></tr>";
+      for (let i = 0; i < x.length; i++) {
+        table += "<tr><td>" +
+          x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
+          "</td><td>" +
+          x[i].getElementsByTagName("author")[0].childNodes[0].nodeValue +
+          "</td></tr>";
+      }
+      document.getElementById("id1").innerHTML = table;
+    }
+  </script>
+
+</body>
+</html>

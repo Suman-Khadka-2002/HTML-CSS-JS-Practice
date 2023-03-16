@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="person.xsd">
+    <name>Jisoo Kim</name>
+    <age>25</age>
+    <address>
+        <street>123 Main St</street>
+        <city>Gunpo</city>
+        <state>Korea</state>
+        <zip>1200</zip>
+    </address>
+</person>

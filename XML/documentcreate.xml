@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
+<addressbook>
+           <emp1>
+                      <name>Suman</name>
+                      <street>Gothathar</street>
+                      <area>Kandaghari</area>
+                      <city>Kathmandu</city>
+                      <province>Bagmati</province>
+                      <country>Nepal</country>
+                      <phoneno>9840480983</phoneno>
+           </emp1>
+
+           <emp2>
+                      <name>Jisoo</name>
+                      <street>Gunpostreet</street>
+                      <area>Gunpoarea</area>
+                      <city>Gunpo</city>
+                      <province>Gyeonggi</province>
+                      <country>South Korea</country>
+                      <phoneno>1234567889</phoneno>
+           </emp2>
+</addressbook>

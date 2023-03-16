@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="http://www.swechha.com/ns">
+  <person>
+    <name>Jisoo Kim</name>
+    <age>25</age>
+    <address>
+        <street>123 Main St</street>
+        <city>Gunpo</city>
+        <state>Korea</state>
+        <zip>1200</zip>
+    </address>
+  </person>
+</root>
