@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <p class="c1">This is first class</p>
+    <p class="c1">This is second class</p>
+    <p id="demo"></p>
+    <script>
+      const x = document.getElementsByClassName("c1");
+      document.getElementById("demo").innerHTML =
+        "The first class text with index 1 is: " + x[1].innerHTML;
+    </script>
+  </body>
+</html>

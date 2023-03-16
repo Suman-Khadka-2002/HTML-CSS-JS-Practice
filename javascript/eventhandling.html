@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Event Handling</title>
+  </head>
+
+  <body>
+    I dare you to
+    <button id="myButton">Click me!</button>
+
+    <script>
+      var myButton = document.getElementById("myButton");
+
+      myButton.addEventListener("click", function (event) {
+        alert("Button clicked!");
+      });
+    </script>
+  </body>
+</html>

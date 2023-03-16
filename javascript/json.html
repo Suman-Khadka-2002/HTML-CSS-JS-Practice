@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h4>JSON to Javascript object</h4>
+	<p id="id1"></p>
+	<p id="id2"></p>
+
+	<script>
+		const txt = '{"name":"Tony Stark", "age":52, "city":"New York"}'
+		const obj = JSON.parse(txt);
+		document.getElementById("id1").innerHTML = txt;
+		document.getElementById("id2").innerHTML = obj.name + ", " + obj.age + "       , " + obj.city;
+	</script>
+</body>
+</html>

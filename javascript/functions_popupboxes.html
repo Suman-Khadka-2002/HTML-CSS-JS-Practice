@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sumankhadka</title>
+</head>
+
+<body>
+    <h1>Popup Boxes Example</h1>
+    <button onclick="showAlert()">Show Alert</button> <br>
+    <button onclick="showConfirm()">Show Confirm</button> <br>
+    <button onclick="showPrompt()">Show Prompt</button>
+
+    <script>
+        function showAlert() {
+            alert("Hello, Cutie pie!!");
+        }
+        function showConfirm() {
+            var result = confirm("Are you sure you want to delete this item?");
+            if (result == true) {
+                alert("Item deleted. Don't ever call me cutie pie.");
+            } else {
+                alert("Item not deleted.hehe");
+            }
+        }
+
+        function showPrompt() {
+            var name = prompt("What is your name?", "CutiePie");
+            if (name != null) {
+                alert("Hello, " + name + "!");
+            }
+        }
+    </script>
+</body>
+</html>

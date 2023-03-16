@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Selectors Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Element Selector
+        $("p").css("color", "Green");
+
+        // ID Selector
+        $("#my-div").css("background-color", "yellow");
+
+        // Class Selector
+        $(".my-class").css("font-weight", "bold");
+      });
+    </script>
+  </head>
+  <body>
+    <p>This is a paragraph.</p>
+    <div id="my-div">
+      <p>This paragraph is inside ID "my-div".</p>
+    </div>
+    <p class="my-class">This paragraph is inside "my-class".</p>
+  </body>
+</html>

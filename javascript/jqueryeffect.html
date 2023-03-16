@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Effects</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Slide Effect
+        $("#slide-button").click(function () {
+          $("#slide-div").slideToggle();
+        });
+
+        // Animate Effect
+        $("#animate-button").click(function () {
+          $("#animate-div").animate({
+            opacity: "0.5",
+          });
+        });
+
+        // Callback Function
+        $("#callback-button").click(function () {
+          $("#callback-div").fadeOut("slow", function () {
+            alert("Animation complete!");
+          });
+        });
+      });
+    </script>
+    <style>
+      div {
+        background-color: bisque;
+        padding: 15px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button id="slide-button">Slide Up/Down</button>
+    <div id="slide-div">This is a div that can be slid up or down.</div>
+    <button id="animate-button">Animate</button>
+    <div id="animate-div">This is a div that can be animated.</div>
+
+    <button id="callback-button">Callback Function</button>
+    <div id="callback-div">
+      This is a div that can be faded out with a callback function.
+    </div>
+  </body>
+</html>

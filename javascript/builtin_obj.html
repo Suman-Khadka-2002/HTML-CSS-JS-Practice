@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>sumankhadka</title>
+  </head>
+  <body>
+    <script>
+      //string object
+      var myString = "Hello, world!";
+      console.log("length= ", myString.length);
+
+      // Number object
+      var myNumber = 42;
+      console.log("Number to string ", myNumber.toString());
+
+      // Boolean object
+      var myBoolean = true;
+      console.log("myboolean = ", myBoolean.valueOf());
+
+      // Date object
+      var myDate = new Date();
+      console.log("date = ", myDate.getFullYear()); // Displays the current year (e.g. 2023)
+
+      // Math object
+      var myNumber = Math.random();
+      console.log("random number = ", myNumber); // Displays a random number between 0 and 1
+
+      // RegExp object
+      var myRegex = /hello/i;
+      console.log(
+        "Tests if the string matches the regular expression",
+        myRegex.test("Hello, world!")
+      );
+    </script>
+  </body>
+</html>

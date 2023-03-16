@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sumankhadka</title>
+  </head>
+
+  <body>
+    <h3>Arrays</h3>
+    <ul id="myList"></ul>
+    <h4>Array after pop: </h4>
+    <p id="demo"></p>
+    <h4>Array after shift: </h4>
+    <p id="dem"></p>
+    <script>
+      var items = ["html", "css", "javascript"];
+      var list = document.getElementById("myList","<br>");
+      list.innerHTML = items;
+
+    //   pop() method
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      fruits.pop();
+      document.getElementById("demo").innerHTML = fruits;
+
+    //   shift() method
+    fruits.shift();
+      document.getElementById("dem").innerHTML = fruits;
+
+
+    </script>
+  </body>
+</html>

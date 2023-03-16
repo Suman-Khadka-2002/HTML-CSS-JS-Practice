@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>sumankhadka</title>
+  </head>
+  <body>
+    <p id="paragraph1">This is the first paragraph.</p>
+    <p id="paragraph2">This is the second paragraph.</p>
+
+    <script>
+      const x = document.getElementsByTagName("p");
+      document.getElementById("paragraph1").innerHTML =
+        "p tag with id paragraph1 says: " + x[0].innerHTML;
+      document.getElementById("paragraph2").innerHTML =
+        "p tag with id paragraph2 says:" + x[1].innerHTML;
+    </script>
+  </body>
+</html>

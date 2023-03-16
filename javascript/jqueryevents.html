@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Events</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Mouse Events
+        $("#button1").click(function () {
+          alert("Button 1 was clicked!");
+        });
+
+        $("#button2").on({
+          mouseenter: function () {
+            $(this).css("background-color", "yellow");
+          },
+          mouseleave: function () {
+            $(this).css("background-color", "white");
+          },
+          click: function () {
+            alert("Button 2 was clicked!");
+          },
+        });
+
+        // Keyboard Events
+        $(document).keypress(function (event) {
+          var keycode = event.keyCode ? event.keyCode : event.which;
+          if (keycode == "13") {
+            alert("Enter key was pressed!");
+          }
+        });
+
+        // Form Events
+        $("#input1").focus(function () {
+          $(this).css("background-color", "lightblue");
+        });
+
+        $("#input1").blur(function () {
+          $(this).css("background-color", "white");
+        });
+
+        $("#form1").submit(function (event) {
+          event.preventDefault();
+          alert("Form was submitted!");
+        });
+
+        // Document/Window Events
+        $(window).resize(function () {
+          alert("Window was resized!");
+        });
+
+        $(document).scroll(function () {
+          alert("Document was scrolled!");
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <button id="button1">Button 1</button>
+    <button id="button2">Button 2</button>
+
+    <form id="form1">
+      <input type="text" id="input1" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

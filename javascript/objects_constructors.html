@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sumankhadka</title>
+  </head>
+  <body>
+    <h2>Objects and Constructors</h2>
+    <p id="myParagraph"></p>
+
+    <script>
+      function Person(name, age, gender) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+      }
+      var myPerson = new Person("Kim Jisoo", 28, "female");
+
+      document.getElementById("myParagraph").innerHTML =
+        myPerson.name + " is " + myPerson.age + " years old, and She is a " + myPerson.gender + ".";
+    </script>
+  </body>
+</html>
